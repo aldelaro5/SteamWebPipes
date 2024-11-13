@@ -47,7 +47,7 @@ namespace SteamWebPipes
             if (File.Exists(Config.X509Certificate))
             {
                 Log("Using certificate");
-                server.Certificate = new X509Certificate2(Config.X509Certificate);
+                server.Certificate = X509CertificateLoader.LoadCertificateFromFile(Config.X509Certificate);
             }
 
             server.Start(socket =>
