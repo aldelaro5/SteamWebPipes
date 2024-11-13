@@ -116,7 +116,8 @@ namespace SteamWebPipes
 
             foreach (var changeList in changeLists)
             {
-                Bootstrap.Broadcast(new ChangelistEvent(changeList));
+                var changelistEvent = new ChangelistEvent(changeList);
+                Bootstrap.Broadcast(changelistEvent);
             }
         }
 
