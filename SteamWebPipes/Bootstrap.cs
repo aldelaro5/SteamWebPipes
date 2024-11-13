@@ -18,6 +18,7 @@ namespace SteamWebPipes
             public string Location { get; set; }
             public string DatabaseConnectionString { get; set; }
             public string X509Certificate { get; set; }
+            public bool WaitForClientsOnBoot { get; set; }
         }
 
         private static int LastBroadcastConnectedUsers;

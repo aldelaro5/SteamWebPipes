@@ -1,5 +1,6 @@
 ﻿{
 	"Location": "ws://127.0.0.1:8181",
 	"DatabaseConnectionString": "Data Source=database.db;",
-	"X509Certificate": "cert.pfx"
+	"X509Certificate": "cert.pfx",
+	"WaitForClientsOnBoot": false
 }
